@@ -1,10 +1,10 @@
 # docker-python-xvfb-chromium-selenium
 
-Dockerfile for an image with Python and a functional Selenium or Chrome/Firefox installation with Xvfb for the X display (necessary for running Selenium headless).
+Dockerfiles for images running Python 2.7 or Python 3.6 + Selenium with either Chrome or Firefox and using Xvfb for the X display (necessary for running Selenium headlessly).
 
 ## Includes:
 
- - Python 2 or Python 3
+ - Python 2.7 or Python 3.6
  - Google Chrome/Chromium or Firefox (Unstable, from Debian)
  - Chromedriver or Geckodriver
  - Selenium
