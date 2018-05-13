@@ -22,18 +22,18 @@ RUN mkdir -p /opt/app
 WORKDIR /opt/app
 
 
-## Copy over project/script (feel free to combine these if your project is a combination of both directories and top-level files)
-### For projects which are modules
-#COPY app/ .
-## For projects which are single scripts
-COPY test.py .
-
-
 ## Your python project dependencies
 RUN pip install selenium
 ## or install from dependencies.txt, comment above and uncomment below
 #COPY requirements.txt .
 #RUN pip install -r requirements.txt
+
+
+## Copy over project/script (feel free to combine these if your project is a combination of both directories and top-level files)
+### For projects which are modules
+#COPY app/ .
+## For projects which are single scripts
+COPY test.py .
 
 
 # Set display port and dbus env to avoid hanging
