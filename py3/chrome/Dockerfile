@@ -25,7 +25,7 @@ COPY test.py .
 
 
 ## Your python project dependencies
-RUN pip3 install selenium # add more deps
+RUN pip3 install selenium
 ## or install from dependencies.txt, comment above and uncomment below
 #COPY requirements.txt .
 #RUN pip3 install -r requirements.txt
